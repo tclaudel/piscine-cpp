@@ -1,0 +1,2 @@
+/tmp/ccjfWrWT.o:(.data.rel.ro._ZTV8AMateria[_ZTV8AMateria]+0x28): undefined reference to `AMateria::use(ICharacter&)'
+collect2: error: ld returned 1 exit status

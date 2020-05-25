@@ -1,0 +1,9 @@
+In file included from ISpaceMarine.hpp:3:0,
+                 from TacticalMarine.hpp:3,
+                 from TacticalMarine.cpp:1:
+ISquad.hpp:18:11: error: ‘ISpaceMarine’ does not name a type
+   virtual ISpaceMarine *getUnit(int) const = 0;
+           ^~~~~~~~~~~~
+ISquad.hpp:19:23: error: ‘ISpaceMarine’ has not been declared
+   virtual int    push(ISpaceMarine *marine) = 0;
+                       ^~~~~~~~~~~~

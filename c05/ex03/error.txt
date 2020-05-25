@@ -1,0 +1,14 @@
+Intern.cpp:79:31: error: ‘UnknownFormException’ has not been declared
+ Intern::UnknownFormException &UnknownFormException::UnknownFormException::operator=(UnknownFormException const &r)
+                               ^~~~~~~~~~~~~~~~~~~~
+Intern.cpp:79:106: error: declaration of ‘operator=’ as non-function
+ Intern::UnknownFormException &UnknownFormException::UnknownFormException::operator=(UnknownFormException const &r)
+                                                                                                          ^~~~~
+Intern.cpp:79:85: error: ‘UnknownFormException’ was not declared in this scope
+ Intern::UnknownFormException &UnknownFormException::UnknownFormException::operator=(UnknownFormException const &r)
+                                                                                     ^~~~~~~~~~~~~~~~~~~~
+Intern.cpp: In member function ‘Form* Intern::makeForm(std::__cxx11::string, std::__cxx11::string)’:
+Intern.cpp:55:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1plus: all warnings being treated as errors

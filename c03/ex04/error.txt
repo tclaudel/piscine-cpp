@@ -1,0 +1,83 @@
+SuperTrap.cpp: In constructor ‘SuperTrap::SuperTrap(std::__cxx11::string)’:
+SuperTrap.cpp:3:78: error: base ‘NinjaTrap’ will be initialized after [-Werror=reorder]
+ SuperTrap::SuperTrap(const std::string name) : NinjaTrap(name), FragTrap(name)
+                                                                              ^
+SuperTrap.cpp:3:78: error:   base ‘FragTrap’ [-Werror=reorder]
+SuperTrap.cpp:3:1: error:   when initialized here [-Werror=reorder]
+ SuperTrap::SuperTrap(const std::string name) : NinjaTrap(name), FragTrap(name)
+ ^~~~~~~~~
+SuperTrap.cpp:3:78: error: no matching function for call to ‘ClapTrap::ClapTrap()’
+ SuperTrap::SuperTrap(const std::string name) : NinjaTrap(name), FragTrap(name)
+                                                                              ^
+In file included from FragTrap.hpp:5:0,
+                 from SuperTrap.hpp:3,
+                 from SuperTrap.cpp:1:
+ClapTrap.hpp:17:3: note: candidate: ClapTrap::ClapTrap(const ClapTrap&)
+   ClapTrap(const ClapTrap &copy);
+   ^~~~~~~~
+ClapTrap.hpp:17:3: note:   candidate expects 1 argument, 0 provided
+ClapTrap.hpp:14:3: note: candidate: ClapTrap::ClapTrap(std::__cxx11::string, int, int, int, int, int, int, int, int)
+   ClapTrap(std::string name, int hitPoints, int maxhitPoints, int energyPoints,
+   ^~~~~~~~
+ClapTrap.hpp:14:3: note:   candidate expects 9 arguments, 0 provided
+SuperTrap.cpp:7:32: error: ‘getMaxHitPoints’ is not a member of ‘FragTrap’
+  m_maxEnergyPoints = FragTrap::getMaxHitPoints();
+                                ^~~~~~~~~~~~~~~
+SuperTrap.cpp:10:12: error: ‘level’ was not declared in this scope
+  m_level = level;
+            ^~~~~
+SuperTrap.cpp:10:12: note: suggested alternative: ‘m_level’
+  m_level = level;
+            ^~~~~
+            m_level
+SuperTrap.cpp: In copy constructor ‘SuperTrap::SuperTrap(const SuperTrap&)’:
+SuperTrap.cpp:16:1: error: base class ‘class ClapTrap’ should be explicitly initialized in the copy constructor [-Werror=extra]
+ SuperTrap::SuperTrap(const SuperTrap &copy)
+ ^~~~~~~~~
+SuperTrap.cpp:16:43: error: no matching function for call to ‘ClapTrap::ClapTrap()’
+ SuperTrap::SuperTrap(const SuperTrap &copy)
+                                           ^
+In file included from FragTrap.hpp:5:0,
+                 from SuperTrap.hpp:3,
+                 from SuperTrap.cpp:1:
+ClapTrap.hpp:17:3: note: candidate: ClapTrap::ClapTrap(const ClapTrap&)
+   ClapTrap(const ClapTrap &copy);
+   ^~~~~~~~
+ClapTrap.hpp:17:3: note:   candidate expects 1 argument, 0 provided
+ClapTrap.hpp:14:3: note: candidate: ClapTrap::ClapTrap(std::__cxx11::string, int, int, int, int, int, int, int, int)
+   ClapTrap(std::string name, int hitPoints, int maxhitPoints, int energyPoints,
+   ^~~~~~~~
+ClapTrap.hpp:14:3: note:   candidate expects 9 arguments, 0 provided
+SuperTrap.cpp:16:1: error: base class ‘class FragTrap’ should be explicitly initialized in the copy constructor [-Werror=extra]
+ SuperTrap::SuperTrap(const SuperTrap &copy)
+ ^~~~~~~~~
+SuperTrap.cpp:16:43: error: no matching function for call to ‘FragTrap::FragTrap()’
+ SuperTrap::SuperTrap(const SuperTrap &copy)
+                                           ^
+In file included from SuperTrap.hpp:3:0,
+                 from SuperTrap.cpp:1:
+FragTrap.hpp:11:3: note: candidate: FragTrap::FragTrap(const FragTrap&)
+   FragTrap(const FragTrap &copy);
+   ^~~~~~~~
+FragTrap.hpp:11:3: note:   candidate expects 1 argument, 0 provided
+FragTrap.hpp:10:3: note: candidate: FragTrap::FragTrap(std::__cxx11::string)
+   FragTrap(std::string name);
+   ^~~~~~~~
+FragTrap.hpp:10:3: note:   candidate expects 1 argument, 0 provided
+SuperTrap.cpp:16:1: error: base class ‘class NinjaTrap’ should be explicitly initialized in the copy constructor [-Werror=extra]
+ SuperTrap::SuperTrap(const SuperTrap &copy)
+ ^~~~~~~~~
+SuperTrap.cpp:16:43: error: no matching function for call to ‘NinjaTrap::NinjaTrap()’
+ SuperTrap::SuperTrap(const SuperTrap &copy)
+                                           ^
+In file included from SuperTrap.hpp:4:0,
+                 from SuperTrap.cpp:1:
+NinjaTrap.hpp:12:3: note: candidate: NinjaTrap::NinjaTrap(const NinjaTrap&)
+   NinjaTrap(const NinjaTrap &copy);
+   ^~~~~~~~~
+NinjaTrap.hpp:12:3: note:   candidate expects 1 argument, 0 provided
+NinjaTrap.hpp:11:3: note: candidate: NinjaTrap::NinjaTrap(std::__cxx11::string)
+   NinjaTrap(std::string name);
+   ^~~~~~~~~
+NinjaTrap.hpp:11:3: note:   candidate expects 1 argument, 0 provided
+cc1plus: all warnings being treated as errors

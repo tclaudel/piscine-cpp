@@ -1,0 +1,18 @@
+Span.cpp:58:7: error: ‘FullStrorageException’ in ‘class Span’ does not name a type
+ Span::FullStrorageException::FullStrorageException(void)
+       ^~~~~~~~~~~~~~~~~~~~~
+Span.cpp:63:7: error: ‘FullStrorageException’ in ‘class Span’ does not name a type
+ Span::FullStrorageException::FullStrorageException(FullStrorageException const &obj)
+       ^~~~~~~~~~~~~~~~~~~~~
+Span.cpp:69:7: error: ‘FullStrorageException’ in ‘class Span’ does not name a type
+ Span::FullStrorageException::~FullStrorageException(void) throw()
+       ^~~~~~~~~~~~~~~~~~~~~
+Span.cpp:74:7: error: ‘FullStrorageException’ in ‘class Span’ does not name a type
+ Span::FullStrorageException &Span::FullStrorageException::operator=(FullStrorageException const &r)
+       ^~~~~~~~~~~~~~~~~~~~~
+Span.cpp:80:19: error: ‘Span::FullStrorageException’ has not been declared
+ const char* Span::FullStrorageException::what() const throw()
+                   ^~~~~~~~~~~~~~~~~~~~~
+Span.cpp:80:61: error: non-member function ‘const char* what()’ cannot have cv-qualifier
+ const char* Span::FullStrorageException::what() const throw()
+                                                             ^

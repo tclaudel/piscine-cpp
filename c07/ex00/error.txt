@@ -1,0 +1,8 @@
+/tmp/cccf4GY5.o: In function `main':
+main.cpp:(.text+0x35): undefined reference to `void swap<int>(int&, int&)'
+main.cpp:(.text+0xb5): undefined reference to `int const& min<int>(int const&, int const&)'
+main.cpp:(.text+0xff): undefined reference to `int const& max<int>(int const&, int const&)'
+main.cpp:(.text+0x191): undefined reference to `void swap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)'
+main.cpp:(.text+0x215): undefined reference to `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const& min<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+main.cpp:(.text+0x25e): undefined reference to `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const& max<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+collect2: error: ld returned 1 exit status

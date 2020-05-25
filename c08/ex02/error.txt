@@ -1,0 +1,41 @@
+main.cpp: In function ‘int main()’:
+main.cpp:38:20: error: ‘stack_iterator’ is not a member of ‘MutantStack<int>’
+  MutantStack<int>::stack_iterator it = mstack.begin();
+                    ^~~~~~~~~~~~~~
+main.cpp:39:20: error: ‘stack_iterator’ is not a member of ‘MutantStack<int>’
+  MutantStack<int>::stack_iterator ite = mstack.end();
+                    ^~~~~~~~~~~~~~
+main.cpp:40:4: error: ‘it’ was not declared in this scope
+  ++it;
+    ^~
+main.cpp:40:4: note: suggested alternative: ‘int’
+  ++it;
+    ^~
+    int
+main.cpp:43:15: error: ‘ite’ was not declared in this scope
+  while (it != ite)
+               ^~~
+main.cpp:43:15: note: suggested alternative: ‘time’
+  while (it != ite)
+               ^~~
+               time
+main.cpp:64:20: error: ‘stack_iterator’ is not a member of ‘MutantStack<int>’
+  MutantStack<int>::stack_iterator lit = lmstack.begin();
+                    ^~~~~~~~~~~~~~
+main.cpp:65:20: error: ‘stack_iterator’ is not a member of ‘MutantStack<int>’
+  MutantStack<int>::stack_iterator lite = lmstack.end();
+                    ^~~~~~~~~~~~~~
+main.cpp:66:4: error: ‘lit’ was not declared in this scope
+  ++lit;
+    ^~~
+main.cpp:66:4: note: suggested alternative: ‘ldiv’
+  ++lit;
+    ^~~
+    ldiv
+main.cpp:69:16: error: ‘lite’ was not declared in this scope
+  while (lit != lite)
+                ^~~~
+main.cpp:69:16: note: suggested alternative: ‘time’
+  while (lit != lite)
+                ^~~~
+                time
